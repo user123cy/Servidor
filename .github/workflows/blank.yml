@@ -1,4 +1,4 @@
-name: Minecraft 24/7
+name: Minecraft 24/7 (Com Auto-Save)
 
 on:
   workflow_dispatch:
@@ -18,16 +18,17 @@ jobs:
           java-version: '21'
           distribution: 'temurin'
 
-      - name: Diagnostico e Inicio
+      - name: Rodar Servidor
         run: |
-          echo "Listando arquivos no repositorio:"
-          ls -R
-          echo "--------------------------------"
-          JAR_FILE=$(ls *.jar | head -n 1)
-          if [ -z "$JAR_FILE" ]; then
-            echo "ERRO: Nenhum arquivo .jar encontrado!"
-            exit 1
-          fi
-          echo "Tentando rodar: $JAR_FILE"
           echo "eula=true" > eula.txt
-          java -Xmx6G -Xms6G -jar "$JAR_FILE" nogui
+          # Roda o servidor. Quando ele fechar (stop), o script continua abaixo.
+          java -Xmx6G -Xms6G -jar server.jar nogui
+
+      - name: Salvando progresso no GitHub
+        if: always() # Salva mesmo se der erro ou fechar
+        run: |
+          git config --global user.name "GitHub Action"
+          git config --global user.email "action@github.com"
+          git add .
+          git commit -m "Backup automático: Mapa e IP salvos" || echo "Sem mudanças para salvar"
+          git push
