@@ -1,9 +1,7 @@
-name: Minecraft 24/7 (Com Auto-Save)
+name: Minecraft Localtonet
 
 on:
   workflow_dispatch:
-  schedule:
-    - cron: '0 */6 * * *'
 
 jobs:
   minecraft:
@@ -18,17 +16,25 @@ jobs:
           java-version: '21'
           distribution: 'temurin'
 
+      - name: Instalar e Iniciar Localtonet
+        run: |
+          wget https://localtonet.com/download/localtonet-linux-x64.zip
+          unzip localtonet-linux-x64.zip
+          chmod +x localtonet
+          # Inicia o túnel em segundo plano usando seu token
+          ./localtonet -token AHy6hJNUocV4WFYzjaiZXGv0fktPexqn9 &
+
       - name: Rodar Servidor
         run: |
           echo "eula=true" > eula.txt
-          # Roda o servidor. Quando ele fechar (stop), o script continua abaixo.
+          # Se você quiser que o mapa salve, lembre de dar /stop no jogo depois
           java -Xmx6G -Xms6G -jar server.jar nogui
 
-      - name: Salvando progresso no GitHub
-        if: always() # Salva mesmo se der erro ou fechar
+      - name: Backup automático
+        if: always()
         run: |
           git config --global user.name "GitHub Action"
           git config --global user.email "action@github.com"
           git add .
-          git commit -m "Backup automático: Mapa e IP salvos" || echo "Sem mudanças para salvar"
+          git commit -m "Backup automático do mapa" || echo "Sem mudanças"
           git push
