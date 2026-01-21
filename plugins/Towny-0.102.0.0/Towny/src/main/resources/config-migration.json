@@ -1,0 +1,927 @@
+[
+  {
+    "version": "0.95.1.9",
+    "changes": [
+      {
+        "type": "TOWN_LEVEL_ADD",
+        "key": "townBlockBuyBonusLimit",
+        "value": "0"
+      }
+    ]
+  },
+  {
+    "version": "0.96.2.2",
+    "changes": [
+      {
+        "type": "APPEND",
+        "path": "protection.switch_ids",
+        "value": ",CRIMSON_PRESSURE_PLATE,WARPED_PRESSURE_PLATE,POLISHED_BLACKSTONE_PRESSURE_PLATE,CRIMSON_BUTTON,WARPED_BUTTON,POLISHED_BLACKSTONE_BUTTON,CRIMSON_DOOR,WARPED_DOOR,CRIMSON_FENCE_GATE,WARPED_FENCE_GATE,CRIMSON_TRAPDOOR,WARPED_TRAPDOOR,LODESTONE,RESPAWN_ANCHOR,TARGET"
+      },
+      {
+        "type": "APPEND",
+        "path": "protection.item_use_ids",
+        "value": ",NETHERITE_AXE"
+      },
+      {
+        "type": "APPEND",
+        "path": "new_world_settings.plot_management.revert_on_unclaim.block_ignore",
+        "value": ",NETHER_GOLD_ORE,ANCIENT_DEBRIS,SOUL_TORCH,SOUL_WALL_TORCH,CRIMSON_SIGN,CRIMSON_WALL_SIGN,WARPED_SIGN,WARPED_WALL_SIGN,LODESTONE,RESPAWN_ANCHOR",
+        "worldAction": "UPDATE_WORLD_BLOCK_IGNORE"
+      },
+      {
+        "type": "APPEND",
+        "path": "new_world_settings.plot_management.mayor_plotblock_delete.mayor_plot_delete",
+        "value": ",CRIMSON_WALL_SIGN,CRIMSON_SIGN,WARPED_WALL_SIGN,WARPED_SIGN",
+        "worldAction": "UPDATE_WORLD_DELETE_MAYOR"
+      },
+      {
+        "type": "APPEND",
+        "path": "new_world_settings.plot_management.block_delete.unclaim_delete",
+        "value": ",CRIMSON_SIGN,WARPED_SIGN,CRIMSON_WALL_SIGN,WARPED_WALL_SIGN,CRIMSON_DOOR,WARPED_DOOR,SOUL_TORCH,SOUL_WALL_TORCH,CRIMSON_PRESSURE_PLATE,WARPED_PRESSURE_PLATE,POLISHED_BLACKSTONE_PRESSURE_PLATE",
+        "worldAction": "UPDATE_WORLD_UNCLAIM_DELETE"
+      }
+    ]
+  },
+  {
+    "version": "0.96.2.18",
+    "changes": [
+      {
+        "type": "APPEND",
+        "path": "new_world_settings.plot_management.revert_on_unclaim.block_ignore",
+        "value": ",NETHER_PORTAL",
+        "worldAction": "UPDATE_WORLD_BLOCK_IGNORE"
+      },
+      {
+        "type": "APPEND",
+        "path": "new_world_settings.plot_management.wild_revert_on_mob_explosion.entities",
+        "value": ",Wither,WitherSkull",
+        "worldAction": "UPDATE_WORLD_EXPLOSION_REVERT_ENTITIES"
+      }
+    ]
+  },
+  {
+    "version": "0.96.2.20",
+    "changes": [
+      {
+        "type": "APPEND",
+        "path": "global_town_settings.farm_plot_allow_blocks",
+        "value": ",CRIMSON_FUNGUS,CRIMSON_STEM,CRIMSON_HYPHAE,CRIMSON_ROOTS,MUSHROOM_STEM,NETHER_WART_BLOCK,BROWN_MUSHROOM,BROWN_MUSHROOM_BLOCK,RED_MUSHROOM,RED_MUSHROOM_BLOCK,SHROOMLIGHT,WARPED_FUNGUS,WARPED_HYPHAE,WARPED_ROOTS,WARPED_STEM,WARPED_WART_BLOCK,WEEPING_VINES_PLANT,WEEPING_VINES,NETHER_SPROUTS"
+      }
+    ]
+  },
+  {
+    "version": "0.96.2.21",
+    "changes": [
+      {
+        "type": "APPEND",
+        "path": "new_world_settings.plot_management.revert_on_unclaim.block_ignore",
+        "value": "FURNACE,BLAST_FURNACE,SMOKER,BREWING_STAND,TNT,AIR,FIRE,NETHER_QUARTZ_ORE",
+        "worldAction": "UPDATE_WORLD_BLOCK_IGNORE"
+      }
+    ]
+  },
+  {
+    "version": "0.96.2.22",
+    "changes": [
+      {
+        "type": "TOWN_LEVEL_ADD",
+        "key": "debtCapModifier",
+        "value": "1.0"
+      }
+    ]
+  },
+  {
+    "version": "0.96.5.10",
+    "changes": [
+      {
+        "type": "APPEND",
+        "path": "global_town_settings.farm_plot_allow_blocks",
+        "value": ",SHEARS"
+      }
+    ]
+  },
+  {
+    "version": "0.96.7.12",
+    "changes": [
+      {
+        "type": "APPEND",
+        "path": "new_world_settings.plot_management.revert_on_unclaim.block_ignore",
+        "value": ",ANCIENT_DEBRIS,NETHERITE_BLOCK,GILDED_BLACKSTONE",
+        "worldAction": "UPDATE_WORLD_BLOCK_IGNORE"
+      }
+    ]
+  },
+  {
+    "version": "0.97.0.4",
+    "changes": [
+      {
+        "type": "APPEND",
+        "path": "new_world_settings.plot_management.revert_on_unclaim.block_ignore",
+        "value": ",DEEPSLATE_IRON_ORE,DEEPSLATE_GOLD_ORE,DEEPSLATE_COAL_ORE,DEEPSLATE_REDSTONE_ORE,DEEPSLATE_DIAMOND_ORE,DEEPSLATE_EMERALD_ORE,DEEPSLATE_LAPIS_ORE,RAW_IRON_BLOCK,RAW_GOLD_BLOCK",
+        "worldAction": "UPDATE_WORLD_BLOCK_IGNORE"
+      }
+    ]
+  },
+  {
+    "version": "0.97.0.14",
+    "changes": [
+      {
+        "type": "TOWNYPERMS_ADD",
+        "path": "towns.default",
+        "value": "towny.command.town.reclaim"
+      },
+      {
+        "type": "TOWNYPERMS_ADD",
+        "path": "nomad",
+        "value": "towny.command.plot.trust"
+      },
+      {
+        "type": "TOWNYPERMS_ADD",
+        "path": "nomad",
+        "value": "towny.command.plot.group.*"
+      }
+    ]
+  },
+  {
+    "version": "0.97.1.4",
+    "changes": [
+      {
+        "type": "APPEND",
+        "path": "global_town_settings.prevent_town_spawn_in",
+        "value": ",outlaw"
+      }
+    ]
+  },
+  {
+    "version": "0.97.1.5",
+    "changes": [
+      {
+        "type": "APPEND",
+        "path": "protection.item_use_ids",
+        "value": ",EGG"
+      }
+    ]
+  },
+  {
+    "version": "0.97.3.2",
+    "changes": [
+      {
+        "type": "TOWNYPERMS_ADD",
+        "path": "nomad",
+        "value": "towny.command.town.ranklist"
+      },
+      {
+        "type": "TOWNYPERMS_ADD",
+        "path": "nomad",
+        "value": "towny.command.nation.ranklist"
+      }
+    ]
+  },
+  {
+    "version": "0.97.5.1",
+    "changes": [
+      {
+        "type": "TOWNYPERMS_ADD",
+        "path": "nations.default",
+        "value": "towny.command.nation.spawn"
+      }
+    ]
+  },
+  {
+    "version": "0.97.5.2",
+    "changes": [
+      {
+        "type": "APPEND",
+        "path": "new_world_settings.plot_management.wild_revert_on_block_explosion.blocks",
+        "value": ",RESPAWN_ANCHOR",
+        "worldAction": "UPDATE_WORLD_EXPLOSION_REVERT_BLOCKS"
+      }
+    ]
+  },
+  {
+    "version": "0.97.5.10",
+    "changes": [
+      {
+        "type": "APPEND",
+        "path": "protection.mob_types",
+        "value": ",Hanging"
+      },
+      {
+        "type": "REPLACE",
+        "path": "new_world_settings.plot_management.revert_on_unclaim.block_ignore",
+        "key": "RAW_GOLD_ORE",
+        "value": "RAW_GOLD_BLOCK",
+        "worldAction": "UPDATE_WORLD_BLOCK_IGNORE"
+      },
+      {
+        "type": "MOVE",
+        "path": "language",
+        "value": "language.language"
+      }
+    ]
+  },
+  {
+    "version": "0.97.5.18",
+    "changes": [
+      {
+        "type": "APPEND",
+        "path": "new_world_settings.plot_management.revert_on_unclaim.block_ignore",
+        "value": ",PLAYER_HEAD,PLAYER_WALL_HEAD,SKELETON_SKULL,SKELETON_WALL_SKULL,CREEPER_HEAD,CREEPER_WALL_HEAD,ZOMBIE_HEAD,ZOMBIE_WALL_HEAD,DRAGON_HEAD,DRAGON_WALL_HEAD",
+        "worldAction": "UPDATE_WORLD_BLOCK_IGNORE"
+      }
+    ]
+  },
+  {
+    "version": "0.98.0.1",
+    "changes": [
+      {
+        "type": "RUNNABLE",
+        "key": "convert_entity_class_names"
+      }
+    ]
+  },
+  {
+    "version": "0.98.0.3",
+    "changes": [
+      {
+        "type": "TOWNYPERMS_ADD",
+        "path": "towns.ranks.sheriff",
+        "value": "towny.command.town.jail"
+      },
+      {
+        "type": "TOWNYPERMS_ADD",
+        "path": "towns.ranks.sheriff",
+        "value": "towny.command.town.unjail"
+      },
+      {
+        "type": "TOWNYPERMS_ADD",
+        "path": "towns.ranks.sheriff",
+        "value": "towny.command.town.jail.list"
+      }
+    ]
+  },
+  {
+    "version": "0.98.1.3",
+    "changes": [
+      {
+        "type": "APPEND",
+        "path": "unclaimed.unclaimed_zone_ignore",
+        "value": ",SUGAR_CANE",
+        "worldAction": "UPDATE_WILDERNESS_IGNORE_MATS"
+      }
+    ]
+  },
+  {
+    "version": "0.98.1.12",
+    "changes": [
+      {
+        "type": "MOVE",
+        "path": "global_town_settings.respawn_protection",
+        "value": "global_town_settings.respawn_protection.time"
+      },
+      {
+        "type": "MOVE",
+        "path": "plugin.interfacing.luckperms_contexts",
+        "value": "plugin.interfacing.luckperms.contexts"
+      }
+    ]
+  },
+  {
+    "version": "0.98.3.2",
+    "changes": [
+      {
+        "type": "APPEND",
+        "path": "protection.switch_ids",
+        "value": ",OAK_CHEST_BOAT"
+      }
+    ]
+  },
+  {
+    "version": "0.98.3.3",
+    "changes": [
+      {
+        "type": "RUNNABLE",
+        "key": "migrate_notifications"
+      }
+    ]
+  },
+  {
+    "version": "0.98.3.4",
+    "changes": [
+      {
+        "type": "RUNNABLE",
+        "key": "add_townblocktype_limits"
+      }
+    ]
+  },
+  {
+    "version": "0.98.3.13",
+    "changes": [
+      {
+        "type": "MOVE",
+        "path": "global_town_settings.spawn_cooldown_time",
+        "value": "global_town_settings.spawning_cooldowns.town_spawn_cooldown_time"
+      },
+      {
+        "type": "MOVE",
+        "path": "global_town_settings.spawn_cooldown_time",
+        "value": "global_town_settings.spawning_cooldowns.outpost_cooldown_time"
+      },
+      {
+        "type": "MOVE",
+        "path": "global_town_settings.spawn_cooldown_time",
+        "value": "global_town_settings.spawning_cooldowns.nation_member_town_spawn_cooldown_time"
+      },
+      {
+        "type": "MOVE",
+        "path": "global_town_settings.spawn_cooldown_time",
+        "value": "global_town_settings.spawning_cooldowns.nation_ally_town_spawn_cooldown_time"
+      },
+      {
+        "type": "MOVE",
+        "path": "global_town_settings.spawn_cooldown_time",
+        "value": "global_town_settings.spawning_cooldowns.unaffiliated_town_spawn_cooldown_time"
+      },
+      {
+        "type": "MOVE",
+        "path": "global_town_settings.spawn_cooldown_time",
+        "value": "global_nation_settings.spawning_cooldowns.nation_member_nation_spawn_cooldown_time"
+      },
+      {
+        "type": "MOVE",
+        "path": "global_town_settings.spawn_cooldown_time",
+        "value": "global_nation_settings.spawning_cooldowns.nation_ally_nation_spawn_cooldown_time"
+      },
+      {
+        "type": "MOVE",
+        "path": "global_town_settings.spawn_cooldown_time",
+        "value": "global_nation_settings.spawning_cooldowns.unaffiliated_nation_spawn_cooldown_time"
+      }
+    ]
+  },
+  {
+    "version": "0.98.4.13",
+    "changes": [
+      {
+        "type": "APPEND",
+        "path": "new_world_settings.plot_management.revert_on_unclaim.block_ignore",
+        "value": ",DRAGON_EGG",
+        "worldAction": "UPDATE_WORLD_BLOCK_IGNORE"
+      }
+    ]
+  },
+  {
+    "version": "0.98.4.17",
+    "changes": [
+      {
+        "type": "APPEND",
+        "path": "new_world_settings.plot_management.revert_on_unclaim.block_ignore",
+        "value": ",CRYING_OBSIDIAN",
+        "worldAction": "UPDATE_WORLD_BLOCK_IGNORE"
+      }
+    ]
+  },
+  {
+    "version": "0.98.6.3",
+    "changes": [
+      {
+        "type": "TOWN_LEVEL_ADD",
+        "key": "resourceProductionModifier",
+        "value": "1.0"
+      }
+    ]
+  },
+  {
+    "version": "0.98.6.5",
+    "changes": [
+      {
+        "type": "TOWN_LEVEL_ADD",
+        "key": "peacefulCostMultiplier",
+        "value": "1.0"
+      },
+      {
+        "type": "NATION_LEVEL_ADD",
+        "key": "peacefulCostMultiplier",
+        "value": "1.0"
+      }
+    ]
+  },
+  {
+    "version": "0.98.6.7",
+    "changes": [
+      {
+        "type": "TOWNYPERMS_ADD",
+        "path": "peaceful",
+        "value": "towny.peaceful"
+      },
+      {
+        "type": "TOWN_LEVEL_ADD",
+        "key": "bankCapModifier",
+        "value": "1.0"
+      },
+      {
+        "type": "NATION_LEVEL_ADD",
+        "key": "bankCapModifier",
+        "value": "1.0"
+      }
+    ]
+  },
+  {
+    "version": "0.99.0.7",
+    "changes": [
+      {
+        "type": "APPEND",
+        "path": "new_world_settings.plot_management.revert_on_unclaim.block_ignore",
+        "value": ",MOVING_PISTON",
+        "worldAction": "UPDATE_WORLD_BLOCK_IGNORE"
+      }
+    ]
+  },
+  {
+    "version": "0.99.2.3",
+    "changes": [
+      {
+        "type": "REPLACE",
+        "path": "new_world_settings.plot_management.wild_revert_on_mob_explosion.entities",
+        "key": "LARGE_FIREBALL",
+        "value": "FIREBALL",
+        "worldAction": "UPDATE_WORLD_EXPLOSION_REVERT_ENTITIES"
+      },
+      {
+        "type": "REPLACE",
+        "path": "new_world_settings.plot_management.wild_revert_on_mob_explosion.entities",
+        "key": "PRIMED_TNT",
+        "value": "TNT",
+        "worldAction": "UPDATE_WORLD_EXPLOSION_REVERT_ENTITIES"
+      },
+      {
+        "type": "REPLACE",
+        "path": "new_world_settings.plot_management.wild_revert_on_mob_explosion.entities",
+        "key": "MINECART_TNT",
+        "value": "TNT_MINECART",
+        "worldAction": "UPDATE_WORLD_EXPLOSION_REVERT_ENTITIES"
+      },
+      {
+        "type": "REPLACE",
+        "path": "new_world_settings.plot_management.wild_revert_on_mob_explosion.entities",
+        "key": "ENDER_CRYSTAL",
+        "value": "END_CRYSTAL",
+        "worldAction": "UPDATE_WORLD_EXPLOSION_REVERT_ENTITIES"
+      },
+      {
+        "type": "REPLACE",
+        "path": "new_world_settings.plot_management.entity_delete.unclaim_delete",
+        "key": "ENDER_CRYSTAL",
+        "value": "end_crystal",
+        "worldAction": "UPDATE_WORLD_UNCLAIM_REVERT_ENTITIES"
+      }
+    ]
+  },
+  {
+    "version": "0.99.3.1",
+    "changes": [
+      {
+        "type": "APPEND",
+        "path": "new_world_settings.plot_management.wild_revert_on_mob_explosion.entities",
+        "value": ",CREEPER",
+        "worldAction": "UPDATE_WORLD_EXPLOSION_REVERT_ENTITIES"
+      }
+    ]
+  },
+  {
+    "version": "0.99.5.14",
+    "changes": [
+      {
+        "type": "TOWNYPERMS_ADD",
+        "path": "nomad",
+        "value": "towny.command.resident.set.about"
+      }
+    ]
+  },
+  {
+    "version": "0.99.5.16",
+    "changes": [
+      {
+        "type": "RUNNABLE",
+        "key": "add_milkable_animals_to_farm_plot"
+      }
+    ]
+  },
+  {
+    "version": "0.99.6.4",
+    "changes": [
+      {
+        "type": "APPEND",
+        "path": "protection.switch_ids",
+        "value": ",DECORATED_POT,CRAFTER"
+      }
+    ]
+  },
+  {
+    "version": "0.100.0.9",
+    "changes": [
+      {
+        "type": "MOVE",
+        "path": "global_town_settings.nation_requires_proximity",
+        "value": "global_nation_settings.proximity.nation_proximity_to_capital_city"
+      }
+    ]
+  },
+  {
+    "version": "0.100.0.16",
+    "changes": [
+      {
+        "type": "MOVE",
+        "path": "town.town_block_ratio",
+        "value": "claiming.town_block_ratio"
+      },
+      {
+        "type": "MOVE",
+        "path": "town.town_block_limit",
+        "value": "claiming.town_block_limit"
+      },
+      {
+        "type": "MOVE",
+        "path": "town.town_block_size",
+        "value": "claiming.town_block_size"
+      },
+      {
+        "type": "MOVE",
+        "path": "town.min_adjacent_blocks",
+        "value": "claiming.min_adjacent_blocks"
+      },
+      {
+        "type": "MOVE",
+        "path": "town.max_claim_radius_value",
+        "value": "claiming.max_claim_radius_value"
+      },
+      {
+        "type": "MOVE",
+        "path": "town.min_distances_ignored_for_towns_in_same_nation",
+        "value": "claiming.distance_rules.min_distances_ignored_for_towns_in_same_nation"
+      },
+      {
+        "type": "MOVE",
+        "path": "town.min_distances_ignored_for_towns_in_allied_nation",
+        "value": "claiming.distance_rules.min_distances_ignored_for_towns_in_allied_nation"
+      },
+      {
+        "type": "MOVE",
+        "path": "town.min_plot_distance_from_town_plot",
+        "value": "claiming.distance_rules.min_plot_distance_from_town_plot"
+      },
+      {
+        "type": "MOVE",
+        "path": "town.min_distance_from_town_homeblock",
+        "value": "claiming.distance_rules.min_distance_from_town_homeblock"
+      },
+      {
+        "type": "MOVE",
+        "path": "town.min_distance_for_outpost_from_plot",
+        "value": "claiming.distance_rules.min_distance_for_outpost_from_plot"
+      },
+      {
+        "type": "MOVE",
+        "path": "town.max_distance_for_outpost_from_town_plot",
+        "value": "claiming.distance_rules.max_distance_for_outpost_from_town_plot"
+      },
+      {
+        "type": "MOVE",
+        "path": "town.min_distance_between_homeblocks",
+        "value": "claiming.distance_rules.min_distance_between_homeblocks"
+      },
+      {
+        "type": "MOVE",
+        "path": "town.max_distance_between_homeblocks",
+        "value": "claiming.distance_rules.max_distance_between_homeblocks"
+      },
+      {
+        "type": "MOVE",
+        "path": "town.new_town_min_distance_from_town_plot",
+        "value": "claiming.distance_rules.new_town_min_distance_from_town_plot"
+      },
+      {
+        "type": "MOVE",
+        "path": "town.new_town_min_distance_from_town_homeblock",
+        "value": "claiming.distance_rules.new_town_min_distance_from_town_homeblock"
+      },
+      {
+        "type": "MOVE",
+        "path": "global_town_settings.allow_outposts",
+        "value": "claiming.outposts.allow_outposts"
+      },
+      {
+        "type": "MOVE",
+        "path": "global_town_settings.limit_outposts_using_town_and_nation_levels",
+        "value": "claiming.outposts.limit_outposts_using_town_and_nation_levels"
+      },
+      {
+        "type": "MOVE",
+        "path": "global_town_settings.over_outpost_limits_stops_teleports",
+        "value": "claiming.outposts.over_outpost_limits_stops_teleports"
+      },
+      {
+        "type": "MOVE",
+        "path": "town.overclaiming.being_overclaimed_allows_other_towns_to_steal_land",
+        "value": "claiming.overclaiming.being_overclaimed_allows_other_towns_to_steal_land"
+      },
+      {
+        "type": "MOVE",
+        "path": "town.overclaiming.overclaiming_prevented_by_homeblock_radius",
+        "value": "claiming.overclaiming.overclaiming_prevented_by_homeblock_radius"
+      },
+      {
+        "type": "MOVE",
+        "path": "town.overclaiming.town_age_requirement",
+        "value": "claiming.overclaiming.town_age_requirement"
+      },
+      {
+        "type": "MOVE",
+        "path": "town.overclaiming.command_cooldown",
+        "value": "claiming.overclaiming.command_cooldown"
+      },
+      {
+        "type": "MOVE",
+        "path": "town.max_purchased_blocks",
+        "value": "claiming.purchased_bonus_blocks.max_purchased_blocks"
+      },
+      {
+        "type": "MOVE",
+        "path": "town.max_purchased_blocks_uses_town_levels",
+        "value": "claiming.purchased_bonus_blocks.max_purchased_blocks_uses_town_levels"
+      },
+      {
+        "type": "MOVE",
+        "path": "town.max_plots_per_resident",
+        "value": "global_town_settings.max_plots_per_resident"
+      },
+      {
+        "type": "MOVE",
+        "path": "town.max_buytown_price",
+        "value": "global_town_settings.max_buytown_price"
+      },
+      {
+        "type": "MOVE",
+        "path": "town.town_limit",
+        "value": "global_town_settings.town_limit"
+      },
+      {
+        "type": "MOVE",
+        "path": "town.max_distance_for_merge",
+        "value": "global_town_settings.max_distance_for_merge"
+      },
+      {
+        "type": "MOVE",
+        "path": "global_town_settings.minimum_amount_of_residents_in_town_for_outpost",
+        "value": "claiming.outposts.minimum_amount_of_residents_in_town_for_outpost"
+      },
+      {
+        "type": "MOVE",
+        "path": "plugin.visualized_spawn_points_enabled",
+        "value": "spawning.visualized_spawn_points_enabled"
+      },
+      {
+        "type": "MOVE",
+        "path": "global_town_settings.allow_town_spawn",
+        "value": "spawning.town_spawn.allow_town_spawn"
+      },
+      {
+        "type": "MOVE",
+        "path": "global_town_settings.allow_town_spawn_travel",
+        "value": "spawning.town_spawn.allow_town_spawn_travel"
+      },
+      {
+        "type": "MOVE",
+        "path": "global_town_settings.allow_town_spawn_travel_nation",
+        "value": "spawning.town_spawn.allow_town_spawn_travel_nation"
+      },
+      {
+        "type": "MOVE",
+        "path": "global_town_settings.allow_town_spawn_travel_ally",
+        "value": "spawning.town_spawn.allow_town_spawn_travel_ally"
+      },
+      {
+        "type": "MOVE",
+        "path": "global_town_settings.is_nation_ally_spawning_requiring_public_status",
+        "value": "spawning.town_spawn.is_nation_ally_spawning_to_town_requiring_public_status"
+      },
+      {
+        "type": "MOVE",
+        "path": "global_town_settings.do_trusted_residents_count_as_residents",
+        "value": "spawning.town_spawn.do_trusted_residents_count_as_residents"
+      },
+      {
+        "type": "MOVE",
+        "path": "global_town_settings.are_new_residents_prompted_to_town_spawn",
+        "value": "spawning.town_spawn.are_new_residents_prompted_to_town_spawn"
+      },
+      {
+        "type": "MOVE",
+        "path": "global_town_settings.teleport_warmup_time",
+        "value": "spawning.spawning_warmups.teleport_warmup_time"
+      },
+      {
+        "type": "MOVE",
+        "path": "global_town_settings.movement_cancels_spawn_warmup",
+        "value": "spawning.spawning_warmups.movement_cancels_spawn_warmup"
+      },
+      {
+        "type": "MOVE",
+        "path": "global_town_settings.damage_cancels_spawn_warmup",
+        "value": "spawning.spawning_warmups.damage_cancels_spawn_warmup"
+      },
+      {
+        "type": "MOVE",
+        "path": "global_town_settings.spawning_cooldowns.town_spawn_cooldown_time",
+        "value": "spawning.town_spawn.spawning_cooldowns.town_spawn_cooldown_time"
+      },
+      {
+        "type": "MOVE",
+        "path": "global_town_settings.spawning_cooldowns.outpost_cooldown_time",
+        "value": "spawning.town_spawn.spawning_cooldowns.outpost_cooldown_time"
+      },
+      {
+        "type": "MOVE",
+        "path": "global_town_settings.spawning_cooldowns.nation_member_town_spawn_cooldown_time",
+        "value": "spawning.town_spawn.spawning_cooldowns.nation_member_town_spawn_cooldown_time"
+      },
+      {
+        "type": "MOVE",
+        "path": "global_town_settings.spawning_cooldowns.nation_ally_town_spawn_cooldown_time",
+        "value": "spawning.town_spawn.spawning_cooldowns.nation_ally_town_spawn_cooldown_time"
+      },
+      {
+        "type": "MOVE",
+        "path": "global_town_settings.spawning_cooldowns.unaffiliated_town_spawn_cooldown_time",
+        "value": "spawning.town_spawn.spawning_cooldowns.unaffiliated_town_spawn_cooldown_time"
+      },
+      {
+        "type": "MOVE",
+        "path": "global_town_settings.spawning_cooldowns.town_spawn_cooldown_time",
+        "value": "spawning.town_spawn.spawning_cooldowns.town_spawn_cooldown_time"
+      },
+      {
+        "type": "MOVE",
+        "path": "global_town_settings.spawn_warnings",
+        "value": "spawning.spawn_cost_warnings"
+      },
+      {
+        "type": "MOVE",
+        "path": "global_town_settings.town_respawn",
+        "value": "spawning.respawning.town_respawn"
+      },
+      {
+        "type": "MOVE",
+        "path": "global_town_settings.respawn_anchor_higher_precendence",
+        "value": "spawning.respawning.respawn_anchor_higher_precendence"
+      },
+      {
+        "type": "MOVE",
+        "path": "global_town_settings.respawn_protection.time",
+        "value": "spawning.respawning.respawn_protection.time"
+      },
+      {
+        "type": "MOVE",
+        "path": "global_town_settings.respawn_protection.allow_pickup",
+        "value": "spawning.respawning.respawn_protection.allow_pickup"
+      },
+      {
+        "type": "MOVE",
+        "path": "global_town_settings.town_respawn_same_world_only",
+        "value": "spawning.respawning.town_respawn_same_world_only"
+      },
+      {
+        "type": "MOVE",
+        "path": "global_town_settings.prevent_town_spawn_in",
+        "value": "spawning.town_spawn.prevent_town_spawn_in"
+      },
+      {
+        "type": "MOVE",
+        "path": "global_town_settings.allow_enemies_spawn_to_peaceful_towns",
+        "value": "spawning.town_spawn.allow_enemies_spawn_to_peaceful_towns"
+      },
+      {
+        "type": "MOVE",
+        "path": "global_nation_settings.capital_spawn",
+        "value": "spawning.nation_spawn.force_nation_spawn_in_capital"
+      },
+      {
+        "type": "MOVE",
+        "path": "global_nation_settings.allow_nation_spawn",
+        "value": "spawning.nation_spawn.allow_nation_spawn"
+      },
+      {
+        "type": "MOVE",
+        "path": "global_nation_settings.allow_nation_spawn_travel",
+        "value": "spawning.nation_spawn.allow_nation_spawn_travel"
+      },
+      {
+        "type": "MOVE",
+        "path": "global_nation_settings.allow_nation_spawn_travel_ally",
+        "value": "spawning.nation_spawn.allow_nation_spawn_travel_ally"
+      },
+      {
+        "type": "MOVE",
+        "path": "global_nation_settings.spawning_cooldowns.nation_member_nation_spawn_cooldown_time",
+        "value": "spawning.nation_spawn.spawning_cooldowns.nation_member_nation_spawn_cooldown_time"
+      },
+      {
+        "type": "MOVE",
+        "path": "global_nation_settings.spawning_cooldowns.nation_ally_nation_spawn_cooldown_time",
+        "value": "spawning.nation_spawn.spawning_cooldowns.nation_ally_nation_spawn_cooldown_time"
+      },
+      {
+        "type": "MOVE",
+        "path": "global_nation_settings.spawning_cooldowns.unaffiliated_nation_spawn_cooldown_time",
+        "value": "spawning.nation_spawn.spawning_cooldowns.unaffiliated_nation_spawn_cooldown_time"
+      }
+    ]
+  },
+  {
+    "version": "0.100.1.15",
+    "changes": [
+      {
+        "type": "MOVE",
+        "path": "plugin.interfacing.using_economy",
+        "value": "economy.using_economy"
+      }
+    ]
+  },
+  {
+    "version": "0.100.1.17",
+    "changes": [
+      {
+        "type": "TOWNYPERMS_ADD",
+        "path": "nomad",
+        "value": "towny.command.resident.outlawlist"
+      }
+    ]
+  },
+  {
+    "version": "0.100.2.10",
+    "changes": [
+      {
+        "type": "RUNNABLE",
+        "key": "update_farm_blocks"
+      }
+    ]
+  },
+  {
+    "version": "0.100.3.9",
+    "changes": [
+      {
+        "type": "NATION_LEVEL_ADD",
+        "key": "nationCapitalBonusOutpostLimit",
+        "value": "0"
+      }
+    ]
+  },
+  {
+    "version": "0.100.4.6",
+    "changes": [
+      {
+        "type": "RUNNABLE",
+        "key": "disable_modern_eco"
+      }
+    ]
+  },
+  {
+    "version": "0.101.0.5",
+    "changes": [
+      {
+        "type": "APPEND",
+        "path": "protection.town_mob_removal_ignored_spawn_causes",
+        "value": ",TRIAL_SPAWNER"
+      }
+    ]
+  },
+  {
+    "version": "0.101.1.2",
+    "changes": [
+      {
+        "type": "RUNNABLE",
+        "key": "add_pale_oak_to_farm_plot"
+      }
+    ]
+  },
+  {
+    "version": "0.101.1.6",
+    "changes": [
+      {
+        "type": "APPEND",
+        "path": "protection.potion_types",
+        "value": ",WIND_CHARGED,WEAVING,INFESTED,OOZING"
+      }
+    ]
+  },
+  {
+    "version": "0.101.2.3",
+    "changes": [
+      {
+        "type": "APPEND",
+        "path": "protection.switch_ids",
+        "value": ",COPPER_CHEST,COPPER_GOLEM_STATUE,SHELVES"
+      }
+    ]
+  }
+]
