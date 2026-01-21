@@ -1,4 +1,24 @@
-- name: Diagnóstico e Início
+name: Minecraft 24/7
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 */6 * * *' # Reinicia a cada 6 horas para manter ativo
+
+jobs:
+  minecraft:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout arquivos
+        uses: actions/checkout@v4
+
+      - name: Instalar Java 21
+        uses: actions/setup-java@v4
+        with:
+          java-version: '21'
+          distribution: 'temurin'
+
+      - name: Rodar Servidor
+        - name: Diagnóstico e Início
         run: |
           echo "Listando arquivos no repositório:"
           ls -R
