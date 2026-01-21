@@ -1,8 +1,9 @@
 name: Minecraft 24/7
+
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 */6 * * *' # Reinicia a cada 6 horas para manter ativo
+    - cron: '0 */6 * * *'
 
 jobs:
   minecraft:
@@ -17,16 +18,14 @@ jobs:
           java-version: '21'
           distribution: 'temurin'
 
-      - name: Rodar Servidor
-        - name: Diagnóstico e Início
+      - name: Diagnostico e Inicio
         run: |
-          echo "Listando arquivos no repositório:"
+          echo "Listando arquivos no repositorio:"
           ls -R
           echo "--------------------------------"
-          # Tenta rodar qualquer arquivo .jar que encontrar
           JAR_FILE=$(ls *.jar | head -n 1)
           if [ -z "$JAR_FILE" ]; then
-            echo "ERRO: Nenhum arquivo .jar encontrado na raiz!"
+            echo "ERRO: Nenhum arquivo .jar encontrado!"
             exit 1
           fi
           echo "Tentando rodar: $JAR_FILE"
