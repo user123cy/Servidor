@@ -1,22 +1,14 @@
-name: Minecraft 24/7
-on:
-  workflow_dispatch: 
-  schedule:
-    - cron: '0 */6 * * *' 
-
-jobs:
-  minecraft:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout arquivos
-        uses: actions/checkout@v4
-
-      - name: Instalar Java 21
-        uses: actions/setup-java@v4
-        with:
-          java-version: '21'
-          distribution: 'temurin'
-
-      - name: Rodar Servidor
+- name: Diagnóstico e Início
         run: |
-          java -Xmx6G -Xms6G -jar server.jar nogui
+          echo "Listando arquivos no repositório:"
+          ls -R
+          echo "--------------------------------"
+          # Tenta rodar qualquer arquivo .jar que encontrar
+          JAR_FILE=$(ls *.jar | head -n 1)
+          if [ -z "$JAR_FILE" ]; then
+            echo "ERRO: Nenhum arquivo .jar encontrado na raiz!"
+            exit 1
+          fi
+          echo "Tentando rodar: $JAR_FILE"
+          echo "eula=true" > eula.txt
+          java -Xmx6G -Xms6G -jar "$JAR_FILE" nogui
